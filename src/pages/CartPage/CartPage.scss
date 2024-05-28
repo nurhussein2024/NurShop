@@ -1,0 +1,152 @@
+@import "../../App.scss";
+
+.empty-cart{
+    min-height: 60vh;
+    img{
+        width: 120px;
+        margin-bottom: 1rem;
+    }
+    .shopping-btn{
+        padding: 0.65rem 2.8rem;
+        margin-top: 1.6rem;
+        border: 1px solid lightblue;
+        transition: $transition-ease;
+
+        &:hover{
+            background-color: transparent;
+            color: lightblue;
+        }
+    }
+}
+
+.cart{
+    overflow-x: scroll;
+    padding-top: 2rem;
+    min-height: 85vh;
+
+    &::-webkit-scrollbar{
+        height: 5px;
+
+    }
+    &::-webkit-scrollbar-track{
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+        border-radius: 15px;
+        background-color: lighten(lightblue, 5%);
+        outline: 1px solid lightblue;
+    }
+
+    .container{
+        padding: 0;
+    }
+    .cart-ctable{
+        min-width: 1000px;
+        .cart-ctr{
+            grid-template-columns: 1fr 4fr 2fr 2fr 2fr 2fr;
+            min-height: 40px;
+            border-bottom: 1px solid $clr-whitesmoke;
+            display: grid;
+            align-items: center!important;
+        }
+        .cart-chead{
+            margin-bottom: 2rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            box-shadow: rgba(60, 64, 67, 0.01) 0px 1px 2px 0px, rgba(60, 64, 67, 0.01) 0px 1px 3px 1px;
+            border-radius: 3px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .cart-cbody{
+            padding-right: 2rem;
+            padding-left: 2rem;
+            box-shadow: rgba(60, 64, 67, 0.01) 0px 1px 2px 0px, rgba(60, 64, 67, 0.01) 0px 1px 3px 1px;
+            border-radius: 3px;
+            font-size: 14.5px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .delete-btn{
+            font-size: 14px;
+            transition: $transition-ease;
+            &:hover{
+                color: $clr-danger;
+            }
+        }
+        .qty-change{
+            .qty-decrease, .qty-increase{
+                font-size: 13px;
+                width: 28px;
+                height: 28px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+            }
+            .qty-value{
+                width: 36px;
+                height: 28px;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+        }
+        .cart-cfoot{
+            margin-top: 2rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+
+            .total-txt{
+                margin-right: -1rem;
+            }
+
+            .clear-cart-btn{
+                border: 1px solid $clr-danger;
+                padding: 0.7rem 1rem;
+                transition: $transition-ease;
+  
+                &:hover{ 
+                    background-color: $clr-danger;
+                    color: $clr-white;
+                }
+            }
+            .checkout-btn{
+                padding: 0.8rem 2.8rem;
+                margin-top: 0.7rem;
+               
+                 
+            }
+        }
+    }
+}
+.buyer-info {
+    background-color: #0880f8; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // det är shadow för lådan
+  }
+  
+  .buyer-info input[type="text"] {
+    width: 100%; 
+    padding: 10px; // den är för avståndet mellan ord 
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #555; 
+  }
+  
+  .buyer-info input[type="text"]:focus {
+    outline: none; 
+    border-color: #48d7ff; 
+  }
+  // den har är button av köpare lite style på den 
+  .checkout-btn {
+    padding: 0.8rem 2.8rem;
+    margin-top: 0.7rem;
+    background-color: #0e9ef8; 
+    color: rgb(8, 3, 3); 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+  
+    &:hover {
+      background-color: #6CA6CD; 
+    }
+  }
+  
