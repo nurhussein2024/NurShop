@@ -1,8 +1,8 @@
 {
-  "name": "NurShop",
+  "name": "nurshop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Nurhussein9.github.io/my-react-project",
+  "homepage": "https://nurhussein2024.github.io/NurShop",
   "dependencies": {
     "-": "^0.0.1",
     "@reduxjs/toolkit": "^1.9.0",
