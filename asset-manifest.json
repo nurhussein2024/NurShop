@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/NurShop/static/css/main.060d462c.css",
+    "main.js": "/NurShop/static/js/main.fed1f255.js",
+    "static/media/shopping_cart.png": "/NurShop/static/media/shopping_cart.0edb59010b1db3cbc904.png",
+    "static/media/correct.png": "/NurShop/static/media/correct.a8d20cd48e2e0d022083.png",
+    "static/media/slick.svg": "/NurShop/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/NurShop/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/NurShop/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/NurShop/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/NurShop/index.html",
+    "static/media/loader.svg": "/NurShop/static/media/loader.c185328623092704676bf131946240ad.svg",
+    "main.060d462c.css.map": "/NurShop/static/css/main.060d462c.css.map",
+    "main.fed1f255.js.map": "/NurShop/static/js/main.fed1f255.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.060d462c.css",
+    "static/js/main.fed1f255.js"
+  ]
+}
