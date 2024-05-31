@@ -1,83 +1,67 @@
 @import "../../App.scss";
 
-   
-    .navbar-brand {
-        font-size: 4.4rem;
+.navbar-brand {
+    font-size: 4.4rem; /* storleken på varumärket */
     border-radius: 50%;
-    }
-  
-    .navbar-collapse{
-        .navbar-search{
-            padding: 4px;
-            margin-left: 32px;
-            border-radius: 2px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
 
-            .form-control{
-                width: 100%;
-                padding: 0 16px;
-                color: rgba(0, 0, 0, 0.8);
-                caret-color: rgb(170, 232, 24);
-                &::placeholder{
-                    font-size: 12px;
-                    font-family: $font-family-manrope;
-                    letter-spacing: 0.5px;
+.navbar-collapse{
+    margin-left: 16px; /* Justera avståndet från vänster */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navbar-nav{
+        margin-left: 16px; /* Justera avståndet från vänster */
+        display: flex;
+
+        .nav-item{
+            margin-right: 16px;
+
+            .nav-link{
+                transition: $transition-ease;
+                &:hover{
+                    opacity: 0.95;
                 }
             }
+        }
         
-            @media screen and (max-width: 576px){
-                display: none;
-            }
+        @media screen and (max-width: 992px){
+            display: none;
         }
-        .navbar-nav{
-            margin-left: 32px;
-            margin-top: 8px;
-            .nav-item{
-                margin-right: 16px;
-                .nav-link{
-                    transition: $transition-ease;
-                    &:hover{
-                        opacity: 0.95;
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 992px){
-                display: none;
+    }
+}
+
+.navbar-cart{
+    margin-left: auto; /* Bestäm avståndet från höger */
+    margin-right: 16px; /* Lägg till extra utrymme från höger */
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+    .cart-btn{
+        position: relative;
+
+        .cart-items-value{
+            position: absolute;
+            top: -10px;
+            right: -8px;
+            background-color: rgb(178, 248, 15);
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(1, 17, 26);
+            padding: 0 0.5rem;
+            width: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:hover{
+            .cart-modal{
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
-    .navbar-cart{
-        margin-left:750px; // det är 650px för att det är 750px mellan navbar och cart
-        margin-top: 10px;
-        height: 30px;
-        border-radius: 30%;
-        font-size: 3rem;
-// det är för button i cart samt hur många items i cart som visas
-        .cart-btn{
-            position: relative;
-            .cart-items-value{
-                position: absolute;
-                top: -10px;
-                right: -8px;
-                background-color: rgb(178, 248, 15);
-                font-size: 14px;
-                font-weight: 500;
-                color: rgb(1, 17, 26);
-                padding: 0 0.5rem;
-                width: 22px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            &:hover{
-                .cart-modal{
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
-        }
-    }
-
+}
