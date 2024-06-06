@@ -25,7 +25,7 @@ const Header = () => {
                       </a>
                     </li>
                     <li>
-                  <a href="https://github.com/Nurhussein9/" className="fs-15">
+                  <a href="https://github.com/nurhussein2024" className="fs-15">
                    <i className="fab fa-github"></i>
                    </a>
                     </li>
