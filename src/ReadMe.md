@@ -27,7 +27,7 @@ Följ dessa steg för att köra projektet lokalt:
 
 1. Klona detta repository:
    ```bash
-   git clone https://github.com/nurhussein2024/NurShop
+   git clone "https://nurhussein2024.github.io/NurShop"
 
    cd nur-shop
    

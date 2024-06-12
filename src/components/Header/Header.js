@@ -39,7 +39,8 @@ const Header = () => {
 
           <div className='header-cnt-bottom'>
             <Navbar />
-           
+            
+            
           </div>
         </div>
       </div>

@@ -16,13 +16,13 @@ function App() {
           <Header />
           <Sidebar />
           <Routes>
-            {/* home page route */}
+            {/* startsidans route */}
             <Route exact path="/" element={<Home />} />
             {/* single product route */}
             <Route path="/product/:id" element={<ProductSingle />} />
-            {/* category wise product listing route */}
+            {/* kategori av produktlistningsväg */}
             <Route path="/category/:category" element={<CategoryProduct />} />
-            {/* routing of cart */}
+            {/* routing av cart */}
             <Route path="/cart" element={<Cart />} />
           </Routes>
           <Footer />
