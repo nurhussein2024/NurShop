@@ -1,65 +1,62 @@
 @import "../../App.scss";
+
 .navbar-brand {
-    font-size: 4.4rem; 
+    font-size: 4.4rem; /* storleken på varumärket */
     border-radius: 50%;
 }
 
-.navbar-collapse{
+.navbar-collapse {
     margin-left: 16px; /* Justera avståndet från vänster */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .navbar-nav{
+
+    .navbar-nav {
         margin-left: 16px; /* Justera avståndet från vänster */
         display: flex;
-        
-            .form-control{
-                width: 100%;
-                padding: 0 16px;
-                color: rgba(0, 0, 0, 0.8);
-                caret-color: rgb(170, 232, 24);
-                &::placeholder{
-                    font-size: 12px;
-                    font-family: $font-family-manrope;
-                    letter-spacing: 0.5px;
-                }
-            }
-        
-            @media screen and (max-width: 576px){
-                display: none;
-            }
-        }
-        .navbar-nav{
-            margin-left: 32px;
-            margin-top: 8px;
-        .nav-item{
-            margin-right: 16px;
+    }
 
-            .nav-link{
-                transition: $transition-ease;
-                &:hover{
-                    opacity: 0.95;
-                }
+    .form-control {
+        width: 100%;
+        padding: 0 16px;
+        color: rgba(0, 0, 0, 0.8);
+        caret-color: rgb(170, 232, 24);
+
+        &::placeholder {
+            font-size: 12px;
+            font-family: $font-family-manrope;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .nav-item {
+        margin-right: 16px;
+
+        .nav-link {
+            transition: $transition-ease;
+
+            &:hover {
+                opacity: 0.95;
             }
         }
-        
-        @media screen and (max-width: 992px){
-            display: none;
-        }
+    }
+
+    @media screen and (max-width: 992px) {
+        display: none;
     }
 }
 
-.navbar-cart{
+.navbar-cart {
     margin-left: auto; /* Bestäm avståndet från höger */
     margin-right: 16px; /* Lägg till extra utrymme från höger */
     height: 30px;
     display: flex;
     align-items: center;
 
-    .cart-btn{
+    .cart-btn {
         position: relative;
 
-        .cart-items-value{
+        .cart-items-value {
             position: absolute;
             top: -10px;
             right: -8px;
@@ -75,8 +72,8 @@
             justify-content: center;
         }
 
-        &:hover{
-            .cart-modal{
+        &:hover {
+            .cart-modal {
                 opacity: 1;
                 visibility: visible;
             }
